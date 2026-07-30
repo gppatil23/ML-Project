@@ -59,7 +59,12 @@ class ModelTrainer:
                     'subsample':[0.6,0.7,0.75,0.8,0.85,0.9],
                     'n_estimators': [8,16,32,64,128,256]
                 },
-                "Linear Regression": {},
+                "Linear Regression": {
+                    'copy_X': [True,False], 
+                    'fit_intercept': [True,False], 
+                    'n_jobs': [1,5,10,15,None], 
+                    'positive': [True,False]
+                },
                 "K-Neighbors Regressor": {
                     'n_neighbors': [3,5,7,9],
                     'weights': ['uniform','distance']
@@ -105,6 +110,6 @@ class ModelTrainer:
             predicted = best_model.predict(X_test)
 
             r2_square = r2_score(y_test,predicted)
-            return r2_square
+            return r2_square,best_model_name
         except Exception as e:
             raise CustomException(e,sys)
