@@ -1,0 +1,90 @@
+/* Global dark background with subtle gradient */
+body {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a2e);
+    color: #e0e0ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered login container */
+.login {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #1a1a2e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.6);
+    text-align: center;
+}
+
+/* Headings */
+.login h1, .login h2, legend {
+    color: #bb86fc;
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #cfcfff;
+}
+
+/* Inputs and selects */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(267, 95%, 76%);
+    border-radius: 8px;
+    background: #121212;
+    color: #e6d8f3;
+    transition: all 0.3s ease;
+}
+    
+
+.form-control:focus {
+    border-color: #9d4edd;
+    box-shadow: 0 0 5px #9514ff;
+    outline: none;
+}
+
+/* Placeholder styling */
+.placeholder {
+    color: #888;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #6a0dad, #bb86fc);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    border: 2px solid purple;
+}
+
+/* Prediction result */
+.login h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #17ff07;
+    text-shadow: 0 0 10px rgba(255, 121, 198, 0.7);
+    background-color: #43055f;
+    border-radius: 10px;
+    border: 1px greenyellow solid;
+    width: 80%;
+    padding: 10px;
+    justify-self: center;
+}
